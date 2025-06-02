@@ -1,0 +1,57 @@
+﻿@inherits LayoutComponentBase
+
+<MudLayout>
+    <MudAppBar Elevation="1" Fixed="false">
+        <MudIconButton
+            Icon="@Icons.Material.Filled.Menu"
+            Color="Color.Inherit"
+            Edge="Edge.Start"
+            OnClick="@ToggleDrawer">
+        </MudIconButton>
+        <MudText Typo="Typo.h6">Naraku Shonin</MudText>
+    </MudAppBar>
+</MudLayout>
+<MudDrawer @bind-Open="_isOpen">
+    <MudDrawerHeader>
+        <AuthorizeView>
+            <Authorized>
+                <MudList T="string"  Class="">
+                    <MudListItem T="string">
+                        Hello, @context.User.Identity?.Name!
+                    </MudListItem>
+                    <MudListItem T="string" Href="/Account/LogOut" Icon="@Icons.Material.Filled.Login">
+                        Log Out
+                    </MudListItem>
+                </MudList>
+            </Authorized>
+            <NotAuthorized>
+                <MudList T="string">
+                    <MudListItem T="string" Href="/Account/Login" Icon="@Icons.Material.Filled.Login">
+                        Login
+                    </MudListItem>
+                </MudList>
+            </NotAuthorized>
+        </AuthorizeView>
+    </MudDrawerHeader>
+    <MudDrawerContainer>
+        
+    </MudDrawerContainer>
+    <MudNavMenu>
+        
+    </MudNavMenu>
+</MudDrawer>
+<MudMainContent Class="pt-0">
+    <MudContainer >
+        @Body
+    </MudContainer>
+</MudMainContent>
+@* Required *@
+<MudThemeProvider />
+<MudPopoverProvider />
+
+@* Needed for dialogs *@
+<MudDialogProvider />
+
+@* Needed for snackbars *@
+<MudSnackbarProvider />
+
