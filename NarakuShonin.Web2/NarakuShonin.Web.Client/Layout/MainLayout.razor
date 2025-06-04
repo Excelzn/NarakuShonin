@@ -12,15 +12,24 @@
     </MudAppBar>
 </MudLayout>
 <MudDrawer @bind-Open="_isOpen">
-    <MudDrawerHeader>
+    <MudDrawerContainer>
         <AuthorizeView>
             <Authorized>
-                <MudList T="string"  Class="">
-                    <MudListItem T="string">
-                        Hello, @context.User.Identity?.Name!
+                <MudList T="string">
+                    <MudListItem T="string" Class="d-flex align-content-center" Style="pointer-events: none">
+                        <MudStack Row="true" AlignItems="AlignItems.Center">
+                            <MudAvatar>
+                                <MudImage Src="@GetAvatar(context.User)"></MudImage>
+                            </MudAvatar>
+                            <MudText Typo="Typo.body1">@context.User.Identity?.Name</MudText>
+                        </MudStack>
                     </MudListItem>
-                    <MudListItem T="string" Href="/Account/LogOut" Icon="@Icons.Material.Filled.Login">
-                        Log Out
+                    <MudListItem T="string" Href="/Account/Logout" Icon="@Icons.Material.Filled.Logout">
+                        Logout
+                    </MudListItem>
+                    <MudDivider/>
+                    <MudListItem T="string" Href="/dashboard" Icon="@Icons.Material.Filled.Dashboard">
+                        Dashboard
                     </MudListItem>
                 </MudList>
             </Authorized>
@@ -32,12 +41,9 @@
                 </MudList>
             </NotAuthorized>
         </AuthorizeView>
-    </MudDrawerHeader>
-    <MudDrawerContainer>
-        
     </MudDrawerContainer>
     <MudNavMenu>
-        
+
     </MudNavMenu>
 </MudDrawer>
 <MudMainContent Class="pt-0">
@@ -54,4 +60,3 @@
 
 @* Needed for snackbars *@
 <MudSnackbarProvider />
-

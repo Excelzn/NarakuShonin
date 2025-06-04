@@ -11,4 +11,11 @@ public class AccountController : ControllerBase
   {
     return Challenge(new AuthenticationProperties { RedirectUri = returnUrl }, "Discord");
   }
+
+  [HttpGet]
+  public async Task<IActionResult> Logout()
+  {
+    await HttpContext.SignOutAsync();
+    return Redirect("/");
+  }
 }

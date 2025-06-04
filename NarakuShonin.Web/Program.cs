@@ -4,6 +4,7 @@ using NarakuShonin.Web.Components;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.HttpOverrides;
 using MudBlazor.Services;
+using NarakuShonin.Shared.Services;
 
 namespace NarakuShonin.Web;
 
@@ -15,7 +16,7 @@ public class Program
 
     // Add services to the container.
     builder.Services.AddRazorComponents()
-      .AddInteractiveServerComponents();
+      .AddInteractiveServerComponents().AddInteractiveWebAssemblyComponents();
     builder.Services.AddHttpClient();
     builder.Services.AddHttpContextAccessor();
     //Configure authentication for the user
@@ -35,6 +36,11 @@ public class Program
         //Required for accessing the oauth2 token in order to make requests on the user's behalf, ie. accessing the user's guild list
         x.SaveTokens = true;
       });
+    builder.Services.AddSingleton<DiscordApiConfig>(_ => builder.Configuration.GetSection("DiscordApi").Get<DiscordApiConfig>() ?? new DiscordApiConfig
+    {
+      ApiRoot = "https://discord.com/api"
+    });
+    builder.Services.AddTransient<DiscordApiService>();
     builder.Services.AddFluxor(opt => opt.ScanAssemblies(typeof(Program).Assembly));
     builder.Services.AddMudServices();
 
@@ -53,6 +59,10 @@ public class Program
       // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
       app.UseHsts();
     }
+    else
+    {
+      app.UseWebAssemblyDebugging();
+    }
 
     app.UseHttpsRedirection();
 
@@ -61,7 +71,9 @@ public class Program
     app.MapStaticAssets();
     app.MapControllers();
     app.MapRazorComponents<App>()
-      .AddInteractiveServerRenderMode();
+      .AddInteractiveServerRenderMode()
+      .AddInteractiveWebAssemblyRenderMode()
+      .AddAdditionalAssemblies(typeof(Client._Imports).Assembly);
 
     app.Run();
   }
