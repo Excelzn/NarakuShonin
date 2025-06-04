@@ -2,6 +2,7 @@ using AspNet.Security.OAuth.Discord;
 using Fluxor;
 using NarakuShonin.Web.Components;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.HttpOverrides;
 using MudBlazor.Services;
 
 namespace NarakuShonin.Web;
@@ -39,7 +40,12 @@ public class Program
 
     builder.Services.AddControllers();
     var app = builder.Build();
-
+    
+    app.UseForwardedHeaders(new ForwardedHeadersOptions
+    {
+      ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
+    });
+    
     // Configure the HTTP request pipeline.
     if (!app.Environment.IsDevelopment())
     {
