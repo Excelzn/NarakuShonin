@@ -1,3 +1,4 @@
+using System.Net;
 using AspNet.Security.OAuth.Discord;
 using Fluxor;
 using NarakuShonin.Web.Components;
@@ -29,6 +30,7 @@ public class Program
         .AddInteractiveServerComponents().AddInteractiveWebAssemblyComponents();
       builder.Services.AddHttpClient();
       builder.Services.AddHttpContextAccessor();
+      
       //Configure authentication for the user
       builder.Services.AddAuthentication(opt =>
         {
@@ -61,7 +63,7 @@ public class Program
 
       app.UseForwardedHeaders(new ForwardedHeadersOptions
       {
-        ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
+        ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto | ForwardedHeaders.XForwardedHost
       });
 
       // Configure the HTTP request pipeline.

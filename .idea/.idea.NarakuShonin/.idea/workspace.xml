@@ -20,8 +20,8 @@
   <component name="ChangeListManager">
     <list default="true" id="266c69e5-f86e-4e90-acd1-73707885e27f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NarakuShonin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NarakuShonin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin.Web/NarakuShonin.Web.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Web/NarakuShonin.Web.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NarakuShonin.Web/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Web/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NarakuShonin.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.sln.DotSettings.user" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,9 +42,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ccf2c812846e0e85c588caa9630e16333dad8be7787b21371a175dc495bc1c/DiscordAuthenticationExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/128b68ecbc1aecda59dbd091e19ae9ab5fdd588390cbc52e04828d89e8b22c4/PathString.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ccf2c812846e0e85c588caa9630e16333dad8be7787b21371a175dc495bc1c/DiscordAuthenticationExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6b91e52dd0e1a19793ecf899f892e5a752fa648f8c25308d97215891e13c3ad5/DiscordAuthenticationDefaults.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b16cc3fb06d1891e237d1ebdac03c18a96b5b38d1a13bac0f41c3bd2df2272/DiscordAuthenticationOptions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bd1d5c50194fea68ff3559c160230b0ab50f5acf4ce3061bffd6d62958e2182/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f6f937e7fde51c3ca061c59112cdd35b76a72e9ef8821ac361c6ef71e90ea88/ControllerEndpointRouteBuilderExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://F:/code/NarakuShonin/NarakuShonin.Web/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NarakuShonin.Web/appsettings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NarakuShonin/Controllers/RootController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NarakuShonin/Program.cs" root0="SKIP_HIGHLIGHTING" />
@@ -365,7 +369,7 @@
       <workItem from="1748817289872" duration="7457000" />
       <workItem from="1748914805694" duration="2131000" />
       <workItem from="1748995423763" duration="11882000" />
-      <workItem from="1749210376120" duration="335000" />
+      <workItem from="1749210376120" duration="1402000" />
     </task>
     <task id="LOCAL-00001" summary="Added forwarded headers logic, and updated redirect uris">
       <option name="closed" value="true" />
@@ -383,7 +387,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749006282505</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added Serilog">
+      <option name="closed" value="true" />
+      <created>1749210830833</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1749210830833</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -431,7 +443,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Added forwarded headers logic, and updated redirect uris" />
     <MESSAGE value="Migrated to Auto interactivity mode - this lets us avoid SignalR scalability issues while keeping the discord auth working. Working on formatting, and added home page." />
-    <option name="LAST_COMMIT_MESSAGE" value="Migrated to Auto interactivity mode - this lets us avoid SignalR scalability issues while keeping the discord auth working. Working on formatting, and added home page." />
+    <MESSAGE value="Added Serilog" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Serilog" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
