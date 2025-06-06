@@ -65,6 +65,8 @@ public class Program
       {
         ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto | ForwardedHeaders.XForwardedHost
       });
+      app.UseSerilogRequestLogging();
+      app.UseAuthentication();
 
       // Configure the HTTP request pipeline.
       if (!app.Environment.IsDevelopment())

@@ -21,7 +21,6 @@
     <list default="true" id="266c69e5-f86e-4e90-acd1-73707885e27f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NarakuShonin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NarakuShonin/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NarakuShonin.Web/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Web/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.sln.DotSettings.user" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -369,7 +368,7 @@
       <workItem from="1748817289872" duration="7457000" />
       <workItem from="1748914805694" duration="2131000" />
       <workItem from="1748995423763" duration="11882000" />
-      <workItem from="1749210376120" duration="1402000" />
+      <workItem from="1749210376120" duration="2920000" />
     </task>
     <task id="LOCAL-00001" summary="Added forwarded headers logic, and updated redirect uris">
       <option name="closed" value="true" />
@@ -395,7 +394,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749210830833</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Trying to fix broken discord auth. The nginx proxy is breaking it.">
+      <option name="closed" value="true" />
+      <created>1749212148804</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1749212148804</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -444,7 +451,8 @@
     <MESSAGE value="Added forwarded headers logic, and updated redirect uris" />
     <MESSAGE value="Migrated to Auto interactivity mode - this lets us avoid SignalR scalability issues while keeping the discord auth working. Working on formatting, and added home page." />
     <MESSAGE value="Added Serilog" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Serilog" />
+    <MESSAGE value="Trying to fix broken discord auth. The nginx proxy is breaking it." />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying to fix broken discord auth. The nginx proxy is breaking it." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
