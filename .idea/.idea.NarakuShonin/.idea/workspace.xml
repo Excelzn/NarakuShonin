@@ -19,35 +19,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="266c69e5-f86e-4e90-acd1-73707885e27f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/NarakuShonin.Web.Shared/Models/DiscordClaimTypes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NarakuShonin.Web/Controllers/DiscordController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NarakuShonin.Web/Models/DiscordUser.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NarakuShonin.Web/Services/DiscordApiService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NarakuShonin.Web2/NarakuShonin.Web.Client/Layout/MainLayout.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NarakuShonin.Web2/NarakuShonin.Web.Client/Layout/MainLayout.razor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NarakuShonin.Web2/NarakuShonin.Web.Client/NarakuShonin.Web.Client.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NarakuShonin.Web2/NarakuShonin.Web.Client/Pages/Dashboard.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NarakuShonin.Web2/NarakuShonin.Web.Client/Pages/Dashboard.razor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NarakuShonin.Web2/NarakuShonin.Web.Client/Pages/Dashboard.razor.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NarakuShonin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NarakuShonin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin.Web/Components/App.razor" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Web/Components/App.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin.Web/Components/Layout/MainLayout.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin.Web/Components/Layout/MainLayout.razor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Web2/NarakuShonin.Web.Client/Layout/MainLayout.razor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin.Web/Components/Layout/MainLayout.razor.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin.Web/Components/Layout/NavMenu.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin.Web/Components/Layout/NavMenu.razor.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin.Web/Components/Pages/Counter.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin.Web/Components/Pages/Home.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin.Web/Components/Pages/Weather.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin.Web/Components/Routes.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin.Web/Components/_Imports.razor" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Web/Components/_Imports.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin.Web/Controllers/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Web/Controllers/AccountController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NarakuShonin.Web/NarakuShonin.Web.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Web/NarakuShonin.Web.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NarakuShonin.Web/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Web/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin.Web/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Web/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin.Web/wwwroot/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Web/wwwroot/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin.sln" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.sln.DotSettings.user" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,25 +45,11 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ccf2c812846e0e85c588caa9630e16333dad8be7787b21371a175dc495bc1c/DiscordAuthenticationExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bd1d5c50194fea68ff3559c160230b0ab50f5acf4ce3061bffd6d62958e2182/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f6f937e7fde51c3ca061c59112cdd35b76a72e9ef8821ac361c6ef71e90ea88/ControllerEndpointRouteBuilderExtensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://F:/code/NarakuShonin/NarakuShonin.Web/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NarakuShonin.Web/appsettings.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://F:/code/NarakuShonin/NarakuShonin.Web2/NarakuShonin.Web.Client/Layout/MainLayout.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="mock://F:/code/NarakuShonin/NarakuShonin.Web2/NarakuShonin.Web.Client/Layout/MainLayout.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="mock://F:/code/NarakuShonin/NarakuShonin.Web2/NarakuShonin.Web.Client/Layout/MainLayout.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="mock://F:/code/NarakuShonin/NarakuShonin.Web2/NarakuShonin.Web.Client/Layout/MainLayout.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="mock://F:/code/NarakuShonin/NarakuShonin.Web2/NarakuShonin.Web.Client/Layout/MainLayout.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="mock://F:/code/NarakuShonin/NarakuShonin.Web2/NarakuShonin.Web.Client/Layout/MainLayout.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="mock://F:/code/NarakuShonin/NarakuShonin.Web2/NarakuShonin.Web.Client/Layout/MainLayout.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="mock://F:/code/NarakuShonin/NarakuShonin.Web2/NarakuShonin.Web.Client/Layout/MainLayout.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="mock://F:/code/NarakuShonin/NarakuShonin.Web2/NarakuShonin.Web.Client/Layout/MainLayout.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="mock://F:/code/NarakuShonin/NarakuShonin.Web2/NarakuShonin.Web.Client/Layout/MainLayout.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="mock://F:/code/NarakuShonin/NarakuShonin.Web2/NarakuShonin.Web.Client/Layout/MainLayout.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="mock://F:/code/NarakuShonin/NarakuShonin.Web2/NarakuShonin.Web.Client/Layout/MainLayout.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NarakuShonin/Controllers/RootController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NarakuShonin/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NarakuShonin/appsettings.Development.json" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NarakuShonin/appsettings.json" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://MainLayout.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -404,7 +364,8 @@
       <workItem from="1748802905358" duration="14320000" />
       <workItem from="1748817289872" duration="7457000" />
       <workItem from="1748914805694" duration="2131000" />
-      <workItem from="1748995423763" duration="10527000" />
+      <workItem from="1748995423763" duration="11882000" />
+      <workItem from="1749210376120" duration="335000" />
     </task>
     <task id="LOCAL-00001" summary="Added forwarded headers logic, and updated redirect uris">
       <option name="closed" value="true" />
@@ -414,7 +375,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748998560304</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Migrated to Auto interactivity mode - this lets us avoid SignalR scalability issues while keeping the discord auth working. Working on formatting, and added home page.">
+      <option name="closed" value="true" />
+      <created>1749006282505</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1749006282505</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -422,10 +391,47 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="a61d9dd1-9508-4f03-a53e-ff26b6cc8e09" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="a61d9dd1-9508-4f03-a53e-ff26b6cc8e09">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:F:/code/NarakuShonin/NarakuShonin.Web" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Added forwarded headers logic, and updated redirect uris" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added forwarded headers logic, and updated redirect uris" />
+    <MESSAGE value="Migrated to Auto interactivity mode - this lets us avoid SignalR scalability issues while keeping the discord auth working. Working on formatting, and added home page." />
+    <option name="LAST_COMMIT_MESSAGE" value="Migrated to Auto interactivity mode - this lets us avoid SignalR scalability issues while keeping the discord auth working. Working on formatting, and added home page." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
