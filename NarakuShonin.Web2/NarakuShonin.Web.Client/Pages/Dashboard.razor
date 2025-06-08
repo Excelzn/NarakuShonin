@@ -1,3 +1,35 @@
 ﻿@page "/dashboard"
-<h3>dashboard</h3>
+@using NarakuShonin.Web.Shared.Models.DiscordApiModels
+@rendermode InteractiveWebAssembly
 
+
+@if (AllowInvitingBot)
+{
+    <MudCard>
+        <MudCardContent>
+            <MudText>
+                You can invite the bot with the button below.
+            </MudText>
+            <MudButton Target="_blank" Href="@_discordInviteConfig.InviteLink" ButtonType="ButtonType.Button" Color="Color.Primary" >Invite Bot</MudButton>
+        </MudCardContent>
+    </MudCard>
+}
+else
+{
+    <MudCard>
+        <MudCardContent>
+            <MudText>We aren't allowing anyone to invite the bot just yet.</MudText>
+        </MudCardContent>
+    </MudCard>
+}
+<MudGrid>
+    @foreach (var guild in Guilds.Where(x => DiscordPermissionHelper.HasPermission(x.Permissions, DiscordPermissions.Administrator)))
+    {
+        <MudItem>
+            <MudCard>
+                <MudImage Src="@GetGuildIcon(guild)"></MudImage>
+                <MudText>@guild.Name</MudText>
+            </MudCard>
+        </MudItem>
+    }
+</MudGrid>

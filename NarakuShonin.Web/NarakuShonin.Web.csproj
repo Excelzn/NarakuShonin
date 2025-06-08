@@ -14,6 +14,7 @@
       <PackageReference Include="Fluxor.Blazor.Web.ReduxDevTools" Version="6.6.0" />
       <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="9.0.5" />
       <PackageReference Include="MudBlazor" Version="8.7.0" />
+      <PackageReference Include="PostHog.AspNetCore" Version="1.0.5" />
       <PackageReference Include="Serilog" Version="4.3.0" />
       <PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
       <PackageReference Include="Serilog.Extensions.Logging" Version="9.0.2" />
@@ -32,6 +33,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\NarakuShonin.Shared\NarakuShonin.Shared.csproj" />
       <ProjectReference Include="..\NarakuShonin.Web2\NarakuShonin.Web.Client\NarakuShonin.Web.Client.csproj" />
     </ItemGroup>
 
