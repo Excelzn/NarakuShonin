@@ -26,23 +26,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="266c69e5-f86e-4e90-acd1-73707885e27f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/NarakuShonin.Angular/src/app/models/discord-models/DiscordGuildLite.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NarakuShonin.Angular/src/app/models/discord-models/Permissions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NarakuShonin.Angular/src/app/services/http-clients/discord-http.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NarakuShonin.Api/Controllers/DiscordController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NarakuShonin.Api/Models/Discord/DiscordGuildLite.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NarakuShonin.Api/Models/Discord/Permissions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NarakuShonin.Api/Services/DiscordApiService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NarakuShonin.Api/Services/IDiscordApiService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.NarakuShonin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NarakuShonin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin.Angular/src/app/state/root.actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Angular/src/app/state/root.actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin.Angular/src/app/state/root.state.ts" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Angular/src/app/state/root.state.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin.Api/Controllers/TestController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin.Api/NarakuShonin.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Api/NarakuShonin.Api.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Api/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.sln.DotSettings.user" afterDir="false" />
-    </list>
+    <list default="true" id="266c69e5-f86e-4e90-acd1-73707885e27f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -557,7 +541,7 @@
       <workItem from="1749681344188" duration="70000" />
       <workItem from="1749681546602" duration="11780000" />
       <workItem from="1750112363917" duration="5211000" />
-      <workItem from="1750159341919" duration="2938000" />
+      <workItem from="1750159341919" duration="3537000" />
     </task>
     <task id="LOCAL-00001" summary="Added forwarded headers logic, and updated redirect uris">
       <option name="closed" value="true" />
