@@ -68,7 +68,12 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d6b757e154dd7f8c23e0e785431c97a76e4b9c6bdae38b978238421dbab55d/MethodBaseInvoker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/dc82e2a21c19e2ded1eed6287831bb10f3bb720bb5b18fda81d818319f9e0/ComponentFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f6f937e7fde51c3ca061c59112cdd35b76a72e9ef8821ac361c6ef71e90ea88/ControllerEndpointRouteBuilderExtensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/NarakuShonin.Web/appsettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NarakuShonin.Web2/NarakuShonin.Web.Client/Layout/MainLayout.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NarakuShonin.Web2/NarakuShonin.Web.Client/Pages/Dashboard.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NarakuShonin.Web2/NarakuShonin.Web.Client/Pages/Dashboard.razor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NarakuShonin.Web2/NarakuShonin.Web.Client/Pages/Home.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NarakuShonin.Web2/NarakuShonin.Web.Client/Services/FeatureFlagClientService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NarakuShonin.Web2/NarakuShonin.Web.Client/State/GuildManagement/Actions/LoadGuilds.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -542,6 +547,7 @@
       <workItem from="1749681546602" duration="11780000" />
       <workItem from="1750112363917" duration="5211000" />
       <workItem from="1750159341919" duration="3537000" />
+      <workItem from="1750201240997" duration="320000" />
     </task>
     <task id="LOCAL-00001" summary="Added forwarded headers logic, and updated redirect uris">
       <option name="closed" value="true" />
@@ -591,7 +597,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750130634992</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="removed blazor app">
+      <option name="closed" value="true" />
+      <created>1750201424858</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1750201424858</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -643,7 +657,8 @@
     <MESSAGE value="Trying to fix broken discord auth. The nginx proxy is breaking it." />
     <MESSAGE value="More attempts to fix this stupid proxy" />
     <MESSAGE value="updating gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="updating gitignore" />
+    <MESSAGE value="removed blazor app" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed blazor app" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
