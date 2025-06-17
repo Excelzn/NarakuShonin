@@ -63,6 +63,9 @@ jobs:
          workingDir: ./NarakuShonin.Angular
       - task: CmdLine@2
         inputs:
+         script: npm install -g @angular/cli
+      - task: CmdLine@2
+        inputs:
           script: ng build --configuration production --output-path ../ngoutput
           workingDirectory: ./NarakuShonin.Angular
       - task: ArchiveFiles@2
