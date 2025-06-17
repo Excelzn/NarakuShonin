@@ -26,50 +26,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="266c69e5-f86e-4e90-acd1-73707885e27f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/NarakuShonin.Angular/.postcssrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NarakuShonin.Angular/src/app/models/user-models/UserClaim.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NarakuShonin.Angular/src/app/services/http-clients/user-http.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NarakuShonin.Angular/src/app/state/root.actions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NarakuShonin.Angular/src/app/state/root.state.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NarakuShonin.Api/Controllers/AccountController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NarakuShonin.Api/Controllers/TestController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NarakuShonin.Api/Controllers/UserController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NarakuShonin.Api/Models/UserClaim.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NarakuShonin.Api/wwwroot/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NarakuShonin.Web2/NarakuShonin.Web.Client/Pages/Manage.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NarakuShonin.Web2/NarakuShonin.Web.Client/Pages/Manage.razor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NarakuShonin.Web2/NarakuShonin.Web.Client/Pages/Manage.razor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NarakuShonin.Web2/NarakuShonin.Web.Client/State/GuildManagement/Actions/LoadGuilds.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NarakuShonin.Web2/NarakuShonin.Web.Client/State/GuildManagement/Actions/SelectGuild.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NarakuShonin.Web2/NarakuShonin.Web.Client/State/GuildManagement/Effects/LoadGuildsEffect.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NarakuShonin.Web2/NarakuShonin.Web.Client/State/GuildManagement/GuildManagementReducers.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NarakuShonin.Web2/NarakuShonin.Web.Client/State/GuildManagement/GuildManagementState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.NarakuShonin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NarakuShonin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin.Web.Shared/Models/DiscordApiModels/DiscordGuild.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Web.Shared/Models/DiscordApiModels/DiscordGuild.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin.Web/Components/App.razor" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Web/Components/App.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin.Web/NarakuShonin.Web.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Web/NarakuShonin.Web.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin.Web/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Web/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin.Web/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Web/Properties/launchSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin.Web/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Web/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin.Web2/NarakuShonin.Web.Client/Layout/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Web2/NarakuShonin.Web.Client/Layout/MainLayout.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin.Web2/NarakuShonin.Web.Client/NarakuShonin.Web.Client.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Web2/NarakuShonin.Web.Client/NarakuShonin.Web.Client.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin.Web2/NarakuShonin.Web.Client/Pages/Dashboard.razor" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Web2/NarakuShonin.Web.Client/Pages/Dashboard.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin.Web2/NarakuShonin.Web.Client/Pages/Dashboard.razor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Web2/NarakuShonin.Web.Client/Pages/Dashboard.razor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin.Web2/NarakuShonin.Web.Client/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Web2/NarakuShonin.Web.Client/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin.sln" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin/Controllers/Controller1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin/Controllers/RootController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin/NarakuShonin.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin/NarakuShonin.http" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin/Properties/launchSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin/WeatherForecast.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin/appsettings.Development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NarakuShonin/appsettings.json" beforeDir="false" />
-    </list>
+    <list default="true" id="266c69e5-f86e-4e90-acd1-73707885e27f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -582,7 +539,7 @@
       <workItem from="1749303927326" duration="13473000" />
       <workItem from="1749681344188" duration="70000" />
       <workItem from="1749681546602" duration="11780000" />
-      <workItem from="1750112363917" duration="4783000" />
+      <workItem from="1750112363917" duration="5211000" />
     </task>
     <task id="LOCAL-00001" summary="Added forwarded headers logic, and updated redirect uris">
       <option name="closed" value="true" />
@@ -624,7 +581,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749213328294</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="updating gitignore">
+      <option name="closed" value="true" />
+      <created>1750130634992</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1750130634992</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -675,7 +640,8 @@
     <MESSAGE value="Added Serilog" />
     <MESSAGE value="Trying to fix broken discord auth. The nginx proxy is breaking it." />
     <MESSAGE value="More attempts to fix this stupid proxy" />
-    <option name="LAST_COMMIT_MESSAGE" value="More attempts to fix this stupid proxy" />
+    <MESSAGE value="updating gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating gitignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
