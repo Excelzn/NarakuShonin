@@ -22,6 +22,17 @@ jobs:
           version: 9.x
           includePreviewVersions: true
           performMultiLevelLookup: true
+      - task: Npm@1
+        inputs:
+         command: install
+         workingDir: ./NarakuShonin.Angular
+      - task: CmdLine@2
+        inputs:
+         script: npm install -g @angular/cli
+      - task: CmdLine@2
+        inputs:
+          script: ng build --configuration production
+          workingDirectory: ./NarakuShonin.Angular
       - task: DotNetCoreCLI@2
         displayName: "Build App"
         inputs:
@@ -51,28 +62,3 @@ jobs:
         inputs:
           targetPath: '$(Build.ArtifactStagingDirectory)' 
           artifactName: 'myWebsite'
-  - job: BuildFrontend
-    displayName: "Build and Test Frontend"
-    steps:
-      - task: CmdLine@2
-        inputs:
-         script: ls
-      - task: Npm@1
-        inputs:
-         command: install
-         workingDir: ./NarakuShonin.Angular
-      - task: CmdLine@2
-        inputs:
-         script: npm install -g @angular/cli
-      - task: CmdLine@2
-        inputs:
-          script: ng build --configuration production --output-path ../ngoutput
-          workingDirectory: ./NarakuShonin.Angular
-      - task: ArchiveFiles@2
-        inputs:
-          rootFolderOrFile: ./ngoutput/browser
-          archiveFile: NarakuShonin.Angular.zip
-          includeRootFolder: false
-      - task: PublishPipelineArtifact@1
-        inputs:
-         targetPath: './NarakuShonin.Angular.zip'
