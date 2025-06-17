@@ -6,20 +6,27 @@ import {
   StateContext
 } from '@ngxs/store';
 import { UserHttpService } from '../services/http-clients/user-http.service';
-import { LoadUserData } from './root.actions';
+import {
+  GuildChosen,
+  LoadGuilds,
+  LoadUserData
+} from './root.actions';
 import {
   catchError,
-  Observable,
   of,
   tap
 } from 'rxjs';
-import { Navigate } from '@ngxs/router-plugin';
+import { DiscordGuildLite } from '../models/discord-models/DiscordGuildLite';
+import { DiscordHttpService } from '../services/http-clients/discord-http.service';
+import { DiscordPermissions } from '../models/discord-models/Permissions';
 
 export interface IRootState {
   userId: string;
   userName: string;
   userAvatarHash: string;
   isLoggedIn: boolean;
+  guilds: DiscordGuildLite[];
+  chosenGuild: DiscordGuildLite|null;
 }
 
 @State<IRootState>({
@@ -28,12 +35,14 @@ export interface IRootState {
     userId: '',
     userName: '',
     userAvatarHash: '',
-    isLoggedIn: false
+    isLoggedIn: false,
+    guilds: [],
+    chosenGuild: null
   }
 })
 @Injectable()
 export class RootState {
-  constructor(private userService: UserHttpService) { }
+  constructor(private userService: UserHttpService, private discordService: DiscordHttpService) { }
 
   @Selector()
   static userName(state: IRootState): string {
@@ -46,6 +55,18 @@ export class RootState {
   @Selector()
   static isLoggedIn(state: IRootState): boolean {
     return state.isLoggedIn;
+  }
+  @Selector()
+  static guilds(state: IRootState): DiscordGuildLite[] {
+    return state.guilds.filter(x => x.permissions.includes(DiscordPermissions.Administrator));
+  }
+  @Selector()
+  static hasChosenGuild(state: IRootState): boolean {
+    return state.chosenGuild !== null;
+  }
+  @Selector()
+  static chosenGuild(state: IRootState): DiscordGuildLite|null {
+    return state.chosenGuild;
   }
 
   // You can add actions and selectors here if needed
@@ -86,5 +107,24 @@ export class RootState {
         });
       })
     );
+  }
+
+  @Action(LoadGuilds)
+  loadGuilds(ctx: StateContext<IRootState>) {
+    return this.discordService.getGuilds().pipe(
+      tap((guilds) => {
+        ctx.patchState({
+          guilds: guilds,
+          chosenGuild: null
+        });
+      })
+    );
+  }
+
+  @Action(GuildChosen)
+  guildChosen(ctx: StateContext<IRootState>, action: GuildChosen) {
+    ctx.patchState({
+      chosenGuild: action.guild
+    });
   }
 }

@@ -9,6 +9,8 @@
 
     <ItemGroup>
         <PackageReference Include="AspNet.Security.OAuth.Discord" Version="9.4.0" />
+        <PackageReference Include="AutoMapper" Version="14.0.0" />
+        <PackageReference Include="AutoMapper.Collection" Version="11.0.0" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.2"/>
     </ItemGroup>
 

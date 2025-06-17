@@ -27,7 +27,9 @@ export class AppComponent implements OnInit {
   selectors = createSelectMap({
     userName: RootState.userName,
     userAvatar: RootState.userAvatar,
-    isLoggedIn: RootState.isLoggedIn
+    isLoggedIn: RootState.isLoggedIn,
+    hasChosenGuild: RootState.hasChosenGuild,
+    chosenGuild: RootState.chosenGuild
   })
 
   ngOnInit() {

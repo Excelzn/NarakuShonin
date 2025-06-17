@@ -1,0 +1,12 @@
+<nz-row nzGutter="8">
+  @for (guild of guilds(); track guild.id) {
+    <nz-col nzSpan="4" class="mb-3">
+      <nz-card nzHoverable [nzCover]="guildImage" (click)="guildClicked(guild)">
+        <nz-card-meta [nzTitle]="guild.name" ></nz-card-meta>
+      </nz-card>
+    </nz-col>
+    <ng-template #guildImage>
+      <img [alt]="guild.name" class="w-full" src="https://cdn.discordapp.com/icons/{{guild.id}}/{{guild.icon}}.png"/>
+    </ng-template>
+  }
+</nz-row>

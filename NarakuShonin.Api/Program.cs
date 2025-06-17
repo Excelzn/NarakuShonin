@@ -1,5 +1,7 @@
 using AspNet.Security.OAuth.Discord;
+using AutoMapper;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using NarakuShonin.Shared.Services;
 
 namespace NarakuShonin.Api;
 
@@ -43,8 +45,17 @@ public class Program
         //Required for accessing the oauth2 token in order to make requests on the user's behalf, ie. accessing the user's guild list
         x.SaveTokens = true;
       });
+    builder.Services.AddHttpContextAccessor();
     // Add services to the container.
-
+    builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(Program).Assembly));
+    builder.Services.AddHttpClient<IDiscordApiService, DiscordApiService>();
+    builder.Services.AddSingleton<DiscordApiConfig>(_ =>
+      builder.Configuration.GetSection("DiscordApi").Get<DiscordApiConfig>() ??
+      new DiscordApiConfig
+      {
+        ApiRoot = "https://discord.com/api"
+      });
+    
     builder.Services.AddControllers();
     // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
     builder.Services.AddOpenApi();

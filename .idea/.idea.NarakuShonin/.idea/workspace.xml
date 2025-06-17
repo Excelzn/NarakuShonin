@@ -26,7 +26,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="266c69e5-f86e-4e90-acd1-73707885e27f" name="Changes" comment="" />
+    <list default="true" id="266c69e5-f86e-4e90-acd1-73707885e27f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/NarakuShonin.Angular/src/app/models/discord-models/DiscordGuildLite.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NarakuShonin.Angular/src/app/models/discord-models/Permissions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NarakuShonin.Angular/src/app/services/http-clients/discord-http.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NarakuShonin.Api/Controllers/DiscordController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NarakuShonin.Api/Models/Discord/DiscordGuildLite.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NarakuShonin.Api/Models/Discord/Permissions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NarakuShonin.Api/Services/DiscordApiService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NarakuShonin.Api/Services/IDiscordApiService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.NarakuShonin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NarakuShonin/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NarakuShonin.Angular/src/app/state/root.actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Angular/src/app/state/root.actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NarakuShonin.Angular/src/app/state/root.state.ts" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Angular/src/app/state/root.state.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NarakuShonin.Api/Controllers/TestController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NarakuShonin.Api/NarakuShonin.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Api/NarakuShonin.Api.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NarakuShonin.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Api/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NarakuShonin.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.sln.DotSettings.user" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,6 +79,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b16cc3fb06d1891e237d1ebdac03c18a96b5b38d1a13bac0f41c3bd2df2272/DiscordAuthenticationOptions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b3575a2f41d7c2dbfaa36e866b8a361e11dd7223ff82bc574c1d5d4b7522f735/Future.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bd1d5c50194fea68ff3559c160230b0ab50f5acf4ce3061bffd6d62958e2182/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ce37be1a06b16c6faa02038d2cc477dd3bca5b217ceeb41c5f2ad45c1bf9/ServiceProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d69d32b11523ef8632e14d552ade88a40ef7a636b5e82a9aa6ac8946374dba/ReflectionScanner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d6b757e154dd7f8c23e0e785431c97a76e4b9c6bdae38b978238421dbab55d/MethodBaseInvoker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/dc82e2a21c19e2ded1eed6287831bb10f3bb720bb5b18fda81d818319f9e0/ComponentFactory.cs" root0="FORCE_HIGHLIGHTING" />
@@ -540,6 +557,7 @@
       <workItem from="1749681344188" duration="70000" />
       <workItem from="1749681546602" duration="11780000" />
       <workItem from="1750112363917" duration="5211000" />
+      <workItem from="1750159341919" duration="2938000" />
     </task>
     <task id="LOCAL-00001" summary="Added forwarded headers logic, and updated redirect uris">
       <option name="closed" value="true" />
