@@ -1,4 +1,5 @@
-﻿@page "/dashboard"
+﻿@inherits Fluxor.Blazor.Web.Components.FluxorComponent
+@page "/dashboard"
 @using NarakuShonin.Web.Shared.Models.DiscordApiModels
 @rendermode InteractiveWebAssembly
 
@@ -22,14 +23,20 @@ else
         </MudCardContent>
     </MudCard>
 }
-<MudGrid>
-    @foreach (var guild in Guilds.Where(x => DiscordPermissionHelper.HasPermission(x.Permissions, DiscordPermissions.Administrator)))
+<MudGrid Class="mt-3">
+    @foreach (var guild in GuildManagementState.Value.GetAdminGuilds())
     {
-        <MudItem>
-            <MudCard>
-                <MudImage Src="@GetGuildIcon(guild)"></MudImage>
-                <MudText>@guild.Name</MudText>
-            </MudCard>
+        <MudItem xs="2">
+            <a href="/manage/@guild.Id">
+                <MudCard Class="h-100" >
+                    <MudCardHeader>
+                        <MudText>@guild.Name</MudText>
+                    </MudCardHeader>
+                    <MudCardContent>
+                        <MudImage Src="@GetGuildIcon(guild)"></MudImage>
+                    </MudCardContent>
+                </MudCard>
+            </a>
         </MudItem>
     }
 </MudGrid>

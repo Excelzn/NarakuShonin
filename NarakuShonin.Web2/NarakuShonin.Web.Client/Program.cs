@@ -1,3 +1,5 @@
+using Fluxor;
+using Fluxor.Blazor.Web.ReduxDevTools;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using MudBlazor.Services;
 using NarakuShonin.Web.Client.Services;
@@ -16,7 +18,11 @@ class Program
     builder.Services.AddCascadingAuthenticationState();
     builder.Services.AddAuthenticationStateDeserialization();
     builder.Services.AddMudServices();
-
+    builder.Services.AddFluxor(opt =>
+    {
+      opt.ScanAssemblies(typeof(Program).Assembly);
+      opt.UseReduxDevTools();
+    });
     builder.Services.AddSingleton<DiscordInviteConfig>(_ =>
       builder.Configuration.GetSection("DiscordInviteConfig").Get<DiscordInviteConfig>() ??
       new DiscordInviteConfig());

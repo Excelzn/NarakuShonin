@@ -1,6 +1,7 @@
 using System.Net;
 using AspNet.Security.OAuth.Discord;
 using Fluxor;
+using Fluxor.Blazor.Web.ReduxDevTools;
 using NarakuShonin.Web.Components;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.HttpOverrides;
@@ -77,7 +78,11 @@ public class Program
           ApiRoot = "https://discord.com/api"
         });
       builder.Services.AddTransient<IDiscordApiService, DiscordApiService>();
-      builder.Services.AddFluxor(opt => opt.ScanAssemblies(typeof(Program).Assembly));
+      builder.Services.AddFluxor(opt =>
+      {
+        opt.ScanAssemblies(typeof(Program).Assembly);
+        opt.UseReduxDevTools();
+      });
       builder.Services.AddMudServices();
 
       builder.Services.AddControllers();

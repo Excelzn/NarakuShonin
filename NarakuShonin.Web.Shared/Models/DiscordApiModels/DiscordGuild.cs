@@ -1,34 +1,34 @@
-﻿using Newtonsoft.Json;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace NarakuShonin.Web.Shared.Models.DiscordApiModels;
 
 public class DiscordGuildLite
 {
-  [JsonProperty(PropertyName = "id")]
+  [JsonPropertyName("id")]
   public string Id { get; set; }
 
-  [JsonProperty(PropertyName = "name")]
+  [JsonPropertyName("name")]
   public string Name { get; set; }
 
-  [JsonProperty(PropertyName = "icon")]
+  [JsonPropertyName("icon")]
   public string Icon { get; set; }
 
-  [JsonProperty(PropertyName = "banner")]
+  [JsonPropertyName("banner")]
   public string Banner { get; set; }
 
-  [JsonProperty(PropertyName = "owner")]
+  [JsonPropertyName("owner")]
   public bool Owner { get; set; }
 
-  [JsonProperty(PropertyName = "permissions")]
+  [JsonPropertyName("permissions")]
   public ulong Permissions { get; set; }
 
-  [JsonProperty(PropertyName = "features")]
+  [JsonPropertyName("features")]
   public List<string> Features { get; set; }
 
-  [JsonProperty(PropertyName = "approximate_member_count")]
+  [JsonPropertyName("approximate_member_count")]
   public int ApproximateMemberCount { get; set; }
 
-  [JsonProperty(PropertyName = "approximate_presence_count")]
+  [JsonPropertyName("approximate_presence_count")]
   public int ApproximatePresenceCount { get; set; }
 }

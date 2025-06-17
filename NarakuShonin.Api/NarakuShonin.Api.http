@@ -1,0 +1,6 @@
+@NarakuShonin.Api_HostAddress = http://localhost:5296
+
+GET {{NarakuShonin.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

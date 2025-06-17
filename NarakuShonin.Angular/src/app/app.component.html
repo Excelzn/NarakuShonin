@@ -1,0 +1,73 @@
+<nz-layout class="app-layout">
+  <nz-header>
+    <div class="app-header">
+      <div class="sidebar-logo">
+        <a routerLink="/">
+          <img src="https://ng.ant.design/assets/img/logo.svg" alt="logo">
+          <h1>Naraku Shonin</h1>
+        </a>
+      </div>
+    </div>
+  </nz-header>
+  <nz-layout>
+    <nz-sider class="menu-sidebar"
+    nzCollapsible
+    nzWidth="256px"
+    nzBreakpoint="md"
+    [(nzCollapsed)]="isCollapsed"
+    [nzTrigger]="null"
+  >
+    <ul nz-menu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
+      <li nz-menu-item (click)="isCollapsed = !isCollapsed">
+        <nz-icon [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'" />
+        <span>Hide Menu</span>
+      </li>
+      @if(selectors.isLoggedIn()) {
+        <li nz-submenu [nzTitle]="titleTemplate">
+          <ng-template #titleTemplate>
+            <nz-avatar [nzSrc]="selectors.userAvatar()" class="user-avatar"></nz-avatar>
+            @if(!isCollapsed){
+              <span class="ant-menu-title-content" style="margin-left: 10px;">{{selectors.userName()}}</span>
+            }
+          </ng-template>
+          <ul>
+            <li nz-menu-item>
+              <a href="/account/logout">Log Out</a>
+            </li>
+          </ul>
+        </li>
+      } @else {
+        <li nz-menu-item>
+          <a href="/account/login">Log In</a>
+        </li>
+      }
+      <li nz-submenu nzOpen nzTitle="Dashboard" nzIcon="dashboard">
+        <ul>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/welcome">Welcome</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a>Monitor</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a>Workplace</a>
+          </li>
+        </ul>
+      </li>
+      <li nz-submenu nzOpen nzTitle="Form" nzIcon="form">
+        <ul>
+          <li nz-menu-item nzMatchRouter>
+            <a>Basic Form</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nz-sider>
+
+    <nz-content>
+      <div class="inner-content">
+        <router-outlet></router-outlet>
+      </div>
+    </nz-content>
+  </nz-layout>
+</nz-layout>

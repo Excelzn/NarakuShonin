@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>3f89f2a7-9ec1-46d4-b35e-c0ee0fb66a97</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="AspNet.Security.OAuth.Discord" Version="9.4.0" />
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.2"/>
+    </ItemGroup>
+
+</Project>
