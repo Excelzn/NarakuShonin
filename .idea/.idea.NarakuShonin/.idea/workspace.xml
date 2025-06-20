@@ -26,7 +26,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="266c69e5-f86e-4e90-acd1-73707885e27f" name="Changes" comment="" />
+    <list default="true" id="266c69e5-f86e-4e90-acd1-73707885e27f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/NarakuShonin.Angular/src/app/services/http-clients/guild-configuration-http.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NarakuShonin.Api/Controllers/GuildConfigurationController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NarakuShonin.DataAccessLayer/ConnectionStringProvider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NarakuShonin.DataAccessLayer/Entities/GuildConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NarakuShonin.DataAccessLayer/IConnectionStringProvider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NarakuShonin.DataAccessLayer/IUnitOfWork.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NarakuShonin.DataAccessLayer/Migrations/202506191114_AlterDataType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NarakuShonin.DataAccessLayer/Migrations/202506191119_AlterDataTypeAgain.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NarakuShonin.DataAccessLayer/Migrations/20250619_Initial.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NarakuShonin.DataAccessLayer/Repositories/GuildConfigurationRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NarakuShonin.DataAccessLayer/UnitOfWork.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NarakuShonin.Shared/Models/GuildConfigurationDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NarakuShonin.Shared/Repositories/IGuildConfigurationRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NarakuShonin.Shared/Service Interfaces/IDiscordPermissionsService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NarakuShonin.Shared/Services/DiscordPermissionsService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.NarakuShonin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NarakuShonin/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NarakuShonin.Angular/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Angular/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NarakuShonin.Angular/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Angular/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NarakuShonin.Angular/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Angular/src/app/app.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NarakuShonin.Angular/src/app/models/discord-models/DiscordGuildLite.ts" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Angular/src/app/models/discord-models/DiscordGuildLite.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NarakuShonin.Angular/src/app/pages/dashboard/dashboard.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Angular/src/app/pages/dashboard/dashboard.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NarakuShonin.Angular/src/app/pages/dashboard/dashboard.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Angular/src/app/pages/dashboard/dashboard.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NarakuShonin.Api/Controllers/DiscordController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Api/Controllers/DiscordController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NarakuShonin.Api/Models/Discord/DiscordGuildLite.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Shared/Models/Discord/DiscordGuildLite.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NarakuShonin.Api/Models/Discord/Permissions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Shared/Models/Discord/Permissions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NarakuShonin.Api/Models/UserClaim.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Shared/Models/UserClaim.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NarakuShonin.Api/NarakuShonin.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Api/NarakuShonin.Api.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NarakuShonin.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Api/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NarakuShonin.Api/Services/DiscordApiService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Api/Services/DiscordApiService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NarakuShonin.Api/Services/IDiscordApiService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Shared/Service Interfaces/IDiscordApiService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NarakuShonin.DataAccessLayer/Class1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.DataAccessLayer/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NarakuShonin.DataAccessLayer/NarakuShonin.DataAccessLayer.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.DataAccessLayer/NarakuShonin.DataAccessLayer.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NarakuShonin.Shared/NarakuShonin.Shared.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.Shared/NarakuShonin.Shared.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NarakuShonin.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/NarakuShonin.sln.DotSettings.user" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,6 +86,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2747c02982ea4f88a70939d0d891471d30400/7a/ce2e8b43/Ensure.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2747c02982ea4f88a70939d0d891471d30400/ef/9c183ddf/FeatureFlagExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/128b68ecbc1aecda59dbd091e19ae9ab5fdd588390cbc52e04828d89e8b22c4/PathString.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/28cf806c19543e3da4764e5a73fe1d26765f389d7f722fc5cd54e7ee69ed/DefaultMigrationInformationLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2b3cf01714fd98ff7f12316ce766442f76ff6a46a8ffb780ec8550953d47b94c/ComponentBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2ed4f657d8bedef3193e4623d4a348dd54413e1df88b3ca60583aa4dd31b3c4/Renderer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3751f63369d883c5ea470ed57be8df2515b62dde23c49b86e1bbaf8c27b/CallSiteRuntimeResolver.cs" root0="FORCE_HIGHLIGHTING" />
@@ -68,12 +104,6 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d6b757e154dd7f8c23e0e785431c97a76e4b9c6bdae38b978238421dbab55d/MethodBaseInvoker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/dc82e2a21c19e2ded1eed6287831bb10f3bb720bb5b18fda81d818319f9e0/ComponentFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f6f937e7fde51c3ca061c59112cdd35b76a72e9ef8821ac361c6ef71e90ea88/ControllerEndpointRouteBuilderExtensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/NarakuShonin.Web2/NarakuShonin.Web.Client/Layout/MainLayout.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/NarakuShonin.Web2/NarakuShonin.Web.Client/Pages/Dashboard.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/NarakuShonin.Web2/NarakuShonin.Web.Client/Pages/Dashboard.razor.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/NarakuShonin.Web2/NarakuShonin.Web.Client/Pages/Home.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/NarakuShonin.Web2/NarakuShonin.Web.Client/Services/FeatureFlagClientService.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/NarakuShonin.Web2/NarakuShonin.Web.Client/State/GuildManagement/Actions/LoadGuilds.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -89,28 +119,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.BlazorApp1: https.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Launch Settings Profile.NarakuShonin.Api: https.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Launch Settings Profile.NarakuShonin.Wasm: https.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Launch Settings Profile.NarakuShonin: https.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Launch Settings Profile.Unnamed.executor&quot;: &quot;Debug&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Docker.NarakuShonin.Web/Dockerfile.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.BlazorApp1: https.executor": "Debug",
+    ".NET Launch Settings Profile.NarakuShonin.Api: https.executor": "Debug",
+    ".NET Launch Settings Profile.NarakuShonin.Wasm: https.executor": "Debug",
+    ".NET Launch Settings Profile.NarakuShonin: https.executor": "Debug",
+    ".NET Launch Settings Profile.Unnamed.executor": "Debug",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Docker.NarakuShonin.Web/Dockerfile.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.NarakuShonin.Api: https">
     <configuration name="BlazorApp1.Client" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -547,7 +582,9 @@
       <workItem from="1749681546602" duration="11780000" />
       <workItem from="1750112363917" duration="5211000" />
       <workItem from="1750159341919" duration="3537000" />
-      <workItem from="1750201240997" duration="320000" />
+      <workItem from="1750201240997" duration="7209000" />
+      <workItem from="1750251263860" duration="7000" />
+      <workItem from="1750382746107" duration="7105000" />
     </task>
     <task id="LOCAL-00001" summary="Added forwarded headers logic, and updated redirect uris">
       <option name="closed" value="true" />
@@ -605,7 +642,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750201424858</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="removed the REST of the blazor app">
+      <option name="closed" value="true" />
+      <created>1750201595832</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1750201595832</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -658,7 +703,8 @@
     <MESSAGE value="More attempts to fix this stupid proxy" />
     <MESSAGE value="updating gitignore" />
     <MESSAGE value="removed blazor app" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed blazor app" />
+    <MESSAGE value="removed the REST of the blazor app" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed the REST of the blazor app" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -686,14 +732,7 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/NarakuShonin.Web2/NarakuShonin.Web.Client/State/GuildManagement/Effects/LoadGuildsEffect.cs</url>
           <line>19</line>
-          <properties documentPath="F:\code\NarakuShonin\NarakuShonin.Web2\NarakuShonin.Web.Client\State\GuildManagement\Effects\LoadGuildsEffect.cs" containingFunctionPresentation="Method 'HandleAsync'">
-            <startOffsets>
-              <option value="602" />
-            </startOffsets>
-            <endOffsets>
-              <option value="663" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="F:\code\NarakuShonin\NarakuShonin.Web2\NarakuShonin.Web.Client\State\GuildManagement\Effects\LoadGuildsEffect.cs" containingFunctionPresentation="Method 'HandleAsync'" />
           <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>

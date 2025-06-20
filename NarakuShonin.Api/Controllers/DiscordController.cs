@@ -1,7 +1,8 @@
-﻿using AutoMapper;
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using NarakuShonin.Api.Models.Discord;
+using NarakuShonin.Shared.Repositories;
+using NarakuShonin.Shared.Service_Interfaces;
 using NarakuShonin.Shared.Services;
 
 namespace NarakuShonin.Api.Controllers;
@@ -12,12 +13,12 @@ namespace NarakuShonin.Api.Controllers;
 public class DiscordController : ControllerBase
 {
   private readonly IDiscordApiService _discordApiService;
-  private readonly IMapper _mapper;
+  private readonly IGuildConfigurationRepository _guildConfigurationRepository;
 
-  public DiscordController(IDiscordApiService discordApiService, IMapper mapper)
+  public DiscordController(IDiscordApiService discordApiService, IGuildConfigurationRepository guildConfigurationRepository)
   {
     _discordApiService = discordApiService;
-    _mapper = mapper;
+    _guildConfigurationRepository = guildConfigurationRepository;
   }
 
   /// <summary>
@@ -30,7 +31,14 @@ public class DiscordController : ControllerBase
     try
     {
       var guilds = await _discordApiService.GetCurrentUserGuilds();
-      return Ok(_mapper.Map<List<DiscordGuildLiteDto>>(guilds));
+      var dtos = guilds.Select(x => x.GetDto()).ToList();
+      var guildIds = guilds.Select(x => x.Id).ToList();
+      var configuredGuilds = await _guildConfigurationRepository.GetUserGuildConfigurations(guildIds);
+      foreach (var guild in dtos)
+      {
+        guild.RegisteredWithBot = configuredGuilds.Any(x => x.Id == guild.Id);
+      }
+      return Ok(dtos);
     }
     catch (UnauthorizedAccessException ex)
     {

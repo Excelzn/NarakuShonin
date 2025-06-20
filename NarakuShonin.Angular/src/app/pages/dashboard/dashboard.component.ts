@@ -19,10 +19,12 @@ import {
   NzCardComponent,
   NzCardMetaComponent
 } from 'ng-zorro-antd/card';
-import { NzImageViewComponent } from 'ng-zorro-antd/experimental/image';
 import { NzImageModule } from 'ng-zorro-antd/image';
 import { DiscordGuildLite } from '../../models/discord-models/DiscordGuildLite';
 import { Navigate } from '@ngxs/router-plugin';
+import { NzButtonComponent } from 'ng-zorro-antd/button';
+import { NzIconDirective } from 'ng-zorro-antd/icon';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-dashboard',
@@ -31,7 +33,9 @@ import { Navigate } from '@ngxs/router-plugin';
     NzColDirective,
     NzCardComponent,
     NzImageModule,
-    NzCardMetaComponent
+    NzCardMetaComponent,
+    NzButtonComponent,
+    NzIconDirective
   ],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss'
@@ -43,11 +47,25 @@ export class DashboardComponent implements OnInit {
   guilds = select(RootState.guilds);
 
   ngOnInit() {
-    this.loadGuilds();
+    if(this.guilds().length === 0) {
+      this.loadGuilds();
+    }
   }
 
   guildClicked(guild: DiscordGuildLite) {
-    this.chooseGuild(guild);
-    this.navigateTo(['/manage', guild.id])
+    if(!guild.registeredWithBot) {
+      window.location.href = `${environment.DiscordInviteConfig.Authority}/oauth2/authorize?` +
+        `client_id=${environment.DiscordInviteConfig.ClientId}&` +
+        `permissions=${environment.DiscordInviteConfig.Permissions}` +
+        `&scope=${environment.DiscordInviteConfig.Scopes}&` +
+        `guild_id=${guild.id}&` +
+        `redirect_uri=${window.location.origin}${environment.DiscordInviteConfig.RedirectUri}&` +
+        `response_type=code`;
+    } else {
+      this.chooseGuild(guild).subscribe(() => {
+        this.navigateTo(['/manage', guild.id]);
+      });
+    }
+
   }
 }

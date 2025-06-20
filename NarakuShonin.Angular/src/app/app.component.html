@@ -43,7 +43,7 @@
             </li>
             @if (selectors.hasChosenGuild()) {
               <li nz-menu-item nzMatchRouter>
-                <a [routerLink]="['/manage', selectors.chosenGuild()?.id]">Manage Guild</a>
+                <a [routerLink]="['/manage', selectors.chosenGuild()?.id]">Manage {{selectors.chosenGuild()?.name}}</a>
               </li>
             }
           </ul>

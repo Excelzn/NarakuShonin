@@ -1,6 +1,6 @@
 ﻿using NarakuShonin.Api.Models.Discord;
 
-namespace NarakuShonin.Shared.Services;
+namespace NarakuShonin.Shared.Service_Interfaces;
 
 public interface IDiscordApiService
 {

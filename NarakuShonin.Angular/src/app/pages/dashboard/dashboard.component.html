@@ -1,3 +1,16 @@
+<nz-row class="mb-3">
+  <nz-col nzSpan="24">
+    <nz-card nzTitle="Choose Server to Manage" [nzExtra]="headerExtra">
+
+    </nz-card>
+    <ng-template #headerExtra>
+      <button type="button" nz-button nzType="primary" (click)="loadGuilds()" >
+        <nz-icon nzType="sync"></nz-icon>
+        Refresh
+      </button>
+    </ng-template>
+  </nz-col>
+</nz-row>
 <nz-row nzGutter="8">
   @for (guild of guilds(); track guild.id) {
     <nz-col nzSpan="4" class="mb-3">

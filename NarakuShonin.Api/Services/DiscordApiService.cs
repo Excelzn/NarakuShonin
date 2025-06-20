@@ -8,6 +8,9 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NarakuShonin.Api.Models.Discord;
+using NarakuShonin.Shared.Service_Interfaces;
+using Newtonsoft.Json;
+using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace NarakuShonin.Shared.Services;
 
@@ -63,10 +66,7 @@ public class DiscordApiService : IDiscordApiService
 
     // Parse the response
     var content = await response.Content.ReadAsStringAsync();
-    var guilds = JsonSerializer.Deserialize<List<DiscordGuildLite>>(content, new JsonSerializerOptions
-    {
-      PropertyNameCaseInsensitive = true
-    });
+    var guilds = JsonSerializer.Deserialize<List<DiscordGuildLite>>(content);
 
     return guilds ?? new List<DiscordGuildLite>();
   }

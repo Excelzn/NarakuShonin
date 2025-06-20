@@ -10,4 +10,5 @@ export interface DiscordGuildLite {
   features: string[];
   approximateMemberCount: number;
   approximatePresenceCount: number;
+  registeredWithBot: boolean;
 }

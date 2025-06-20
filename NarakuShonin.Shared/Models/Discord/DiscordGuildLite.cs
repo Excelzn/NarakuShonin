@@ -1,5 +1,4 @@
 ﻿using System.Text.Json.Serialization;
-using AutoMapper;
 using NarakuShonin.Web.Shared.Models.DiscordApiModels;
 
 namespace NarakuShonin.Api.Models.Discord;
@@ -32,6 +31,23 @@ public class DiscordGuildLite
 
   [JsonPropertyName("approximate_presence_count")]
   public int ApproximatePresenceCount { get; set; }
+
+  public DiscordGuildLiteDto GetDto()
+  {
+    return new DiscordGuildLiteDto
+    {
+      Id = Id,
+      Name = Name,
+      Icon = Icon,
+      Banner = Banner,
+      Owner = Owner,
+      Permissions = DiscordPermissionHelper.ConvertToSimplePermissions(Permissions),
+      Features = Features,
+      ApproximateMemberCount = ApproximateMemberCount,
+      ApproximatePresenceCount = ApproximatePresenceCount
+    };
+  }
+  
 }
 
 public class DiscordGuildLiteDto
@@ -53,17 +69,6 @@ public class DiscordGuildLiteDto
   public int ApproximateMemberCount { get; set; }
 
   public int ApproximatePresenceCount { get; set; }
-}
-
-public class DiscordGuildLiteMapper : Profile
-{
-  public DiscordGuildLiteMapper()
-  {
-    CreateMap<DiscordGuildLite, DiscordGuildLiteDto>()
-      .ForMember(dest => dest.Permissions, 
-        opt => 
-          opt.MapFrom(src => 
-            DiscordPermissionHelper.ConvertToSimplePermissions(src.Permissions)))
-      .ReverseMap();
-  }
+  
+  public bool RegisteredWithBot { get; set; }
 }

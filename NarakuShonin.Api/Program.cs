@@ -1,6 +1,8 @@
 using AspNet.Security.OAuth.Discord;
-using AutoMapper;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using NarakuShonin.Api.Models.Discord;
+using NarakuShonin.DataAccessLayer;
+using NarakuShonin.Shared.Service_Interfaces;
 using NarakuShonin.Shared.Services;
 
 namespace NarakuShonin.Api;
@@ -46,8 +48,8 @@ public class Program
         x.SaveTokens = true;
       });
     builder.Services.AddHttpContextAccessor();
-    // Add services to the container.
-    builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(Program).Assembly));
+    builder.Services.AddDataAccessLayer(builder.Configuration);
+    builder.Services.AddTransient<IDiscordPermissionsService, DiscordPermissionsService>();
     builder.Services.AddHttpClient<IDiscordApiService, DiscordApiService>();
     builder.Services.AddSingleton<DiscordApiConfig>(_ =>
       builder.Configuration.GetSection("DiscordApi").Get<DiscordApiConfig>() ??
@@ -61,7 +63,7 @@ public class Program
     builder.Services.AddOpenApi();
 
     var app = builder.Build();
-
+    app.UseDataAccessLayer();
     // Configure the HTTP request pipeline.
     if (app.Environment.IsDevelopment())
     {
